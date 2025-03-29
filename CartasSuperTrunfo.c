@@ -7,6 +7,19 @@
 //Teste larissa
 
 int main() {
+    char nome[50];
+    //nome de cidades
+    int população;
+    //numeros de populações de duas cidades.
+    float area;
+    //numero de areas para duas cidadeds.
+    float PIB;
+    // produto interno bruto das cidades.
+    char codigo;
+    //uma letra para representar a cidades.
+    int pontos;
+    //pontos turisticos.
+    
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
