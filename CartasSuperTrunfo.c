@@ -90,20 +90,20 @@
    resultado2 = PIB1 > PIB2;
    resultado3 = area1 > area2;
    resultado4 = pontosT1 > pontosT2;
-   resultado5 = densidade1 > densidade2;
+   resultado5 = densidade1 < densidade2;
    resultado6 = percapita1 > percapita2;
    resultado7 = super1 > super2;
    
    //imprimento resultado da comparação onde 1 e verdadeiro e 0 falso.
    printf("\n========= Comparado as cartas =========\n");
    printf(" 1=verdade e 0=falso\n");
-   printf("\nPopulação: carta 1 (%lu) é maior que a carta 2 (%lu)? %d\n",populacao1, populacao2, (populacao1 > populacao2));
-   printf("PIB: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",PIB1, PIB2, (PIB1 > PIB2));
-   printf("Area: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",area1, area2, (area1 > area2));
-   printf("Pontos Turisticos: carta 1 (%d) é maior que a carta 2 (%d)? %d\n",pontosT1, pontosT2, (pontosT1 > pontosT2));
-   printf("Densidade Populacional: carta 1 (%.2f) é menor que a carta 2 (%.2f)? %d\n",densidade1, densidade2, (densidade1 < densidade2));
-   printf("PIB per capita: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",percapita1, percapita2, (percapita1 > percapita2));
-   printf("Super Poder: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",super1, super2, (super1 > super2));
+   printf("\nPopulação: carta 1 (%lu) é maior que a carta 2 (%lu)? %d\n",populacao1, populacao2, (resultado1));
+   printf("PIB: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",PIB1, PIB2, (resultado2));
+   printf("Area: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",area1, area2, (resultado3));
+   printf("Pontos Turisticos: carta 1 (%d) é maior que a carta 2 (%d)? %d\n",pontosT1, pontosT2, (resultado4));
+   printf("Densidade Populacional: carta 1 (%.2f) é menor que a carta 2 (%.2f)? %d\n",densidade1, densidade2, (resultado5));
+   printf("PIB per capita: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",percapita1, percapita2, (resultado6));
+   printf("Super Poder: carta 1 (%.2f) é maior que a carta 2 (%.2f)? %d\n",super1, super2, (resultado7));
   
  return 0;
 }
